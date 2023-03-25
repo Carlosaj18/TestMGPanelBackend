@@ -9,11 +9,24 @@ export const api = createApi({
     },
   }),
   reducerPath: "adminApi",
-  tagTypes: ["Users", "UserFilter", "UpdateUser", "DeleteUser", "PostSignUp"],
+  tagTypes: [
+    "Users",
+    "UserFilter",
+    "UpdateUser",
+    "DeleteUser",
+    "PostSignUp",
+    "PostSignUpAdmin",
+  ],
   endpoints: (build) => ({
     getUsers: build.query({
       query: () => "user/all",
-      providesTags: ["Users", "UserFilter", "UpdateUser", "UpdateStatusUser"],
+      providesTags: [
+        "Users",
+        "UserFilter",
+        "UpdateUser",
+        "PostSignUp",
+        "PostSignUpAdmin",
+      ],
     }),
     getUserFilter: build.query({
       query: ({ page, pageSize, sort, search }) => ({
@@ -39,14 +52,24 @@ export const api = createApi({
       providesTags: ["DeleteUser"],
     }),
     postSignUp: build.mutation({
-      query: ({ payload }) => {
-        console.log("🚀 ~ file: api.js:43 ~ payload:", payload);
+      query: ({ ...payload }) => {
         return {
           url: "auth/register",
           method: "POST",
           body: payload,
         };
       },
+      providesTags: ["PostSignUp"],
+    }),
+    postSignUpAdmin: build.mutation({
+      query: ({ ...payload }) => {
+        return {
+          url: "auth/registerAdmin",
+          method: "POST",
+          body: payload,
+        };
+      },
+      providesTags: ["PostSignUpAdmin"],
     }),
   }),
 });
@@ -58,4 +81,5 @@ export const {
   useUpdateStatusUserMutation,
   useDeleteItemMutation,
   usePostSignUpMutation,
+  usePostSignUpAdminMutation,
 } = api;

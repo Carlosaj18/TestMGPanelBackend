@@ -20,11 +20,7 @@ function HomePage() {
 
   const handleRegister = async () => {
     try {
-      const data = {
-        name: name,
-        email: email,
-      };
-      triggerSignUp(data);
+      triggerSignUp({name, email});
     } catch (error) {
       if (error.response && error.response.status === 400) {
         toast.error("The user has already registered with that email");

@@ -172,10 +172,6 @@ const Customers = () => {
     setGridKey((prevKey) => prevKey + 1); // Force a re-render
   };
 
-  const handleClick = () => {
-    console.log("Click in Add");
-  };
-
   return (
     <Box m="1.5rem 2.5rem">
       <Header title="USERS" subtitle="Entire list of users" />
@@ -229,7 +225,7 @@ const Customers = () => {
           onSortModelChange={(newSortModel) => setSort(...newSortModel)}
           components={{ Toolbar: DataGridCustomToolbar }}
           componentsProps={{
-            toolbar: { searchInput, setSearchInput, setSearch, handleClick },
+            toolbar: { searchInput, setSearchInput, setSearch },
           }}
           slots={{
             noRowsOverlay: CustomNoRowsOverlay,
