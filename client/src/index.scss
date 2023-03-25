@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+$primary-color: #0959BA;
+$secondary-color: #1EA2D6;
+$font-black-color: #000000;
+$font-white-color: #FFFFFF;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.home-page {
+  display: flex;;
+  background: $primary-color; 
+  width: 100%;
+  height: 100%;
+  min-height: 528px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* center horizontally */
+  align-items: center; /* center vertically */
+  width: 100%;
+}
+
+/** Left container */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+}
+
+.left-container-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container-header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+  width: 100%;
+}
+
+.left-container-header  img {
+  height: 100%;
+  width: 100%;
+}
+
+.left-container-header .texto-logo {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 2em;
+  color: $font-white-color;
+}
+
+.left-container-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $font-white-color;
+  gap: 1em;
+}
+
+.left-container-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  margin-top: 0.5em;
+  color: $font-white-color;
+}
+
+.location {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 120%;
+  padding-left: 0.2em
+}
+
+.info-icon {
+  padding-left: 0.5em;;
+}
+
+.contact {
+  padding-left: 0.5em
+}
+
+/** Right container */
+
+.right-container {
+  width: 60%;
+  display: flex;
+  ;
+}
+
+.right-main-container {
+  background: $secondary-color;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding-left: 2em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+.right-main-container .title-container {
+  font-size: 5em;
+  font-weight:900;
+  color: $font-white-color;
+  height: fit-content;
+  width: 90%;
+}
+
+@media screen and (max-width: 1210px) {
+  .right-main-container .title-container {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .right-main-container .title-container {
+    font-size: 3em;
+  }
+}
+
+.right-main-container .paragraph-container {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 29px;
+  ;;
+  display: flex;
+  width: 90%;
+}
+
+@media screen and (max-width: 710px) {
+  .right-main-container .paragraph-container {
+    font-size: 1em;
+  }
+}
+
+.availability {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 6em;
+  width: 100%;
+}
+
+@media screen and (max-width: 1061px) {
+  .availability .date-number {
+    font-size: 3em;
+  }
+  
+  .availability .date-letters {
+    font-size: 1em;
+  }
+}
+
+.availability .container-availability {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.availability .date-number {
+  font-size: 4em;
+  font-weight: 700;
+  color: $font-white-color;
+}
+
+.availability .date-letters {
+  font-size: 2em;
+  font-weight: 700;
+  color: $font-white-color;
+}
+
+@media screen and (max-width: 710px) {
+  .availability {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+.right-main-container .email-paragraph-container {
+  font-size: 1.4em;
+  font-weight: 400;
+  width: 90%;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7em;
+  padding: 1em;
+  width: 600px;
+}
+
+.subscribe-form-inputs {
+  display: flex;
+  justify-content: center; /* center child horizontally */
+  align-items: center; /* center child vertically */
+  height: 100%; /* set the height of the container */
+  gap: 0.7em;
+}
+
+.subscribe-form input[type="text"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0959BA;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 40%;
+  height: 40px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-form input[type="email"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0959BA;
+  background: #FFFFFF;
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the placeholder text */
+::placeholder {
+  text-align: center;
+}
+
+::placeholder {
+  font-weight: 700;
+}
+
+/* Center the text while input is in focus */
+input[type="text"]:focus {
+  text-align: center;
+}
+
+/* Center the placeholder text */
+::-webkit-input-placeholder { /* WebKit browsers */
+  text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  text-align: center;
+}
+::placeholder { /* Modern browsers */
+  text-align: center;
+}
+
+.sumbit {
+  color: #FFFFFF;
+  width: 200px;
+  height: 40px;
+  background: #0959BA;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.sumbit:hover {
+  background-color: #1571E0;
+}
+
+@media screen and (max-width: 1061px) {
+  .home-page {
+    display: flex;;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 5em; 
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+    width: 100%;
+  }
+
+  .right-container {
+    width: 80%;
+    display: flex;
+    padding-bottom: 3em;
+  }
+
+  .right-main-container {
+    background: $secondary-color;
+    border-radius: 60px;
+    padding-left: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    ;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .subscribe-form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.7em;
+  }
+
+  .subscribe-form input[type="text"],  .subscribe-form input[type="email"] {
+    width: 60%;
+  }
+
+  .sumbit {
+    width: 300px;
+    min-width: 300px;
+    padding: 1em;
+    align-self: start;
+  }
+}
+
