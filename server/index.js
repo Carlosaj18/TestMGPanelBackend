@@ -9,7 +9,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
-
+import userRoutes from "./routes/user.js";
 // ************ Data Imports ************
 
 // ************ Configuration ************
@@ -23,16 +23,16 @@ const app = express();
 // ************ Middlewares ************
 app.use(express.json());
 app.use(helmet());
-app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+app.use(helmet.crossOriginResourcePolicy({ policy: "same-site" }));
 app.use(morgan("common"));
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
 // ************ Route System require and use() ************
 app.use("/auth", authRoutes);
-
+app.use("/user", userRoutes);
 // ************ Mongose SetUp ************
 // ************ Servidor ************
 const PORT = process.env.PORT || 9000;
