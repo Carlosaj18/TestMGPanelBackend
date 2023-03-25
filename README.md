@@ -219,9 +219,9 @@ Don't forget to give the project a star! Thanks again!
 
 <p id="live-site"><p>
 
-<a href="https://chat-ai-frontend.onrender.com">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
+<a href="https://backend-qe51.onrender.com/user/all">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
-• **[Admin CRUD Dashboard](https://admin-frontend-1wzy.onrender.com/)** is a responsive web app can be viewed on any device.
+• **[Admin CRUD Dashboard](https://backend-qe51.onrender.com/user/all)** is a responsive web app can be viewed on any device.
 
 <br>
 
