@@ -115,8 +115,6 @@ Build a COMPLETE Fullstack Responsive Admin Dashboard
 
 https://lucid.app/lucidchart/db8203c9-02d0-4e96-94a7-6d7279c11262/edit?viewport_loc=-1175%2C-152%2C3840%2C1728%2C0_0&invitationId=inv_475a0d15-6b0c-40bc-8c72-c7106d089782
 
-![image](https://user-images.githubusercontent.com/62365628/225504686-ae57abec-ad89-466d-a167-71707c4f4dad.png)
-
 ![New_Subscribers_DataModel](https://user-images.githubusercontent.com/62365628/227727354-e53c31c1-c763-4558-83cb-4874ef2968b8.jpeg)
 
 <!-- GETTING STARTED -->
