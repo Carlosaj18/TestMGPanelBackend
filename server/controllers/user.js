@@ -59,7 +59,6 @@ export const updateProfile = tryCatch(async (req, res) => {
 });
 
 export const deleteUser = tryCatch(async (req, res) => {
-  console.log("🚀 ~ file: user.js:64 ~ deleteUser ~ req.params.id:", req.params.id)
   const deletedUser = await User.findByIdAndDelete(req.params.userId);
   if (!deletedUser) {
     return res.status(404).json({ message: "User not found" });
