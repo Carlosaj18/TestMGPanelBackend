@@ -224,9 +224,9 @@ Don't forget to give the project a star! Thanks again!
 
 <p id="live-site"><p>
 
-<a href="https://backend-qe51.onrender.com/user/all">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
+<a href="https://test-mg-panel-backend.vercel.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
-• **[Admin CRUD Dashboard](https://backend-qe51.onrender.com/user/all)** is a responsive web app can be viewed on any device.
+• **[Admin CRUD Dashboard](https://test-mg-panel-backend.vercel.app/)** is a responsive web app can be viewed on any device.
 
 <br>
 
