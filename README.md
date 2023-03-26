@@ -221,8 +221,8 @@ Don't forget to give the project a star! Thanks again!
 
 <a href="https://test-mg-panel-backend.vercel.app/">![Live Site](https://res.cloudinary.com/dn1e07eul/image/upload/v1659389947/Readme%20Headers/inter-live-site_ngkqcf.png)</a>
 
-• **[Wee Logistics](https://test-mg-panel-backend.vercel.app/)** is a responsive web app can be viewed on any device.
-• **[Admin CRUD Dashboard](https://test-mg-panel-backend.vercel.app/admin)** is a responsive web app can be viewed on any device.
+1. **[Wee Logistics](https://test-mg-panel-backend.vercel.app/)** is a responsive web app can be viewed on any device.
+2. **[Admin CRUD Dashboard](https://test-mg-panel-backend.vercel.app/admin)** is a responsive web app can be viewed on any device.
 
 <br>
 
